@@ -1,12 +1,15 @@
-import { StatusBar } from "expo-status-bar";
-import { StyleSheet, Text, View } from "react-native";
+import { StyleSheet, View } from "react-native";
+import { ThemeProvider } from "./theme";
+import { Box } from "./components/base/box";
+import { Text } from "./components/base/text";
 
 export default function App() {
   return (
-    <View style={styles.container}>
+    <ThemeProvider>
+    <Box style={styles.container}>
       <Text>Open up App.tsx to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
+    </Box>
+    </ThemeProvider>
   );
 }
 
