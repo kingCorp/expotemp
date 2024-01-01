@@ -2,7 +2,7 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { withTranslation } from "react-i18next";
 
-// import { ToastOverlay } from "../components/toast";
+import { ToastOverlay } from "../components/toast";
 import { ScreenOne, ScreenTwo } from "../screens";
 
 import { navigationRef } from "./utils";

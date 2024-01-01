@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 
 import { Screen, Text } from "../components/base";
-// import { Button } from "../components/button";
+import { Button } from "../components/button";
 import { useNavigation } from "../hooks/navigation";
 
 export function ScreenOne() {
@@ -13,13 +13,13 @@ export function ScreenOne() {
       <Text marginBottom="m" textAlign="center">
         {t("screen.one.welcome")}
       </Text>
-      {/* <Button
+      <Button
         backgroundColor="error"
         label="Go to next"
         onPress={() => {
           navigate("ScreenTwo");
         }}
-      /> */}
+      />
     </Screen>
   );
 }
